@@ -4,8 +4,7 @@ import chatting.service.dto.ChatRoom;
 import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Repository;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.*;
 
 @Repository
 public class ChatRoomRepository {
@@ -15,5 +14,11 @@ public class ChatRoomRepository {
     @PostConstruct
     private void init(){
         chatRoomMap = new LinkedHashMap<>();
+    }
+
+    public List<ChatRoom> findAllRoom() {
+        List chatRooms = new ArrayList<>(chatRoomMap.values());
+        Collections.reverse(chatRooms);
+        return chatRooms;
     }
 }
