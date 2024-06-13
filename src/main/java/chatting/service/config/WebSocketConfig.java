@@ -16,6 +16,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
                 .setAllowedOrigins("*");
     }//git distribution error
     //git secret token error
+    //add Personal Access Token(PAT)
 
     @Override
     public void configureMessageBroker(MessageBrokerRegistry registry){
