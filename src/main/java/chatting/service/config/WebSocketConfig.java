@@ -15,6 +15,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
         registry.addEndpoint("/ws/stomp")
                 .setAllowedOrigins("*");
     }//git distribution error
+    //git secret token error
 
     @Override
     public void configureMessageBroker(MessageBrokerRegistry registry){

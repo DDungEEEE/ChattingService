@@ -16,7 +16,7 @@ jobs:
     - name: Set up JDK 17
       uses: actions/setup-java@v2
       with:
-        distribution: 'zulu'
+        distribution: 'adopt'  # 또는 'zulu'
         java-version: '17'
 
     - name: Cache Gradle packages
