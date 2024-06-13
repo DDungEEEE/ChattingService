@@ -16,7 +16,7 @@ jobs:
     - name: Set up JDK 17
       uses: actions/setup-java@v2
       with:
-        discription: 'adopt'
+        distribution: 'adopt'
         java-version: '17'
 
     - name: Cache Gradle packages
